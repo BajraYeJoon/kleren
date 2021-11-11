@@ -1,10 +1,14 @@
 import React from "react";
+import { withRouter } from "react-router";
 
 import "./item-collection.scss";
 
-const ItemCollection = ({ title, imageUrl, size }) => {
+const ItemCollection = ({ title, imageUrl, size, history, linkUrl, match }) => {
   return (
-    <div className={`${size} item__collections`}>
+    <div
+      className={`${size} item__collections`}
+      onClick={() => history.push(`${match.url}${linkUrl}`)}
+    >
       <div
         className="background-image"
         style={{
@@ -19,4 +23,4 @@ const ItemCollection = ({ title, imageUrl, size }) => {
   );
 };
 
-export default ItemCollection;
+export default withRouter(ItemCollection);
