@@ -1,0 +1,22 @@
+.button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.7px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
