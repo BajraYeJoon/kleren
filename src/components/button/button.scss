@@ -1,11 +1,11 @@
 .button {
-  min-width: 165px;
+  min-width: 35%;
   width: auto;
   height: 50px;
   letter-spacing: 0.7px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 20px;
+  font-size: 15px;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -13,10 +13,21 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
+  margin: 5px;
 
   &:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+  }
+
+  &.google-sign-in {
+    background-color: rgb(86, 66, 199);
+    color: white;
+
+    &:hover {
+      background-color: rgb(89, 71, 170);
+      border: none;
+    }
   }
 }

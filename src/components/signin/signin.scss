@@ -1,6 +1,11 @@
 .signin {
-  width: 30vw;
+  width: 400px;
   display: flex;
   text-transform: none;
   flex-direction: column;
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
 }
